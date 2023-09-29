@@ -9,7 +9,7 @@ function beforesubmit(event){
     console.log('inputdate->',inputdate.value);
 
     let formatteddate = new Date(inputdate.value).toLocaleDateString("en-IN");
-    outputdate.value = formatteddate(); 
+    outputdate.value = formatteddate; 
 	} else {
     alert("please check the reCAPTCHA box to submit the form");
     event.preventDefault();
