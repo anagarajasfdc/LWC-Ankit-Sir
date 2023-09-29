@@ -12,8 +12,11 @@
 
 <h1> Create a Lead Form</h1>
     
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" 
-        method="POST"onsubmit="beforesubmit(event)" >
+        <!-- <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" 
+        method="POST"onsubmit="beforesubmit(event)" > -->
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
         <input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00D5j00000B77OxEAJ","ts":""}'>
         <input type=hidden name="oid" value="00D5j00000B77OxEAJ">
         <input type=hidden name="retURL" value="https://anagarajasfdc.github.io/LWC-Ankit-Sir/Thanks.html">
@@ -33,8 +36,9 @@
         
         <input type="submit" name="submit" class="submit"><br>
         
-        <div class="g-recaptcha"  data-callback="captchasuccess" data-sitekey="6LeP9UgoAAAAAB1CWCI5lxfY1Xi2ZXC46gQ9a9VE"></div><br>
-        
+        <!-- <div class="g-recaptcha"  data-callback="captchasuccess" data-sitekey="6LeP9UgoAAAAAB1CWCI5lxfY1Xi2ZXC46gQ9a9VE"></div><br> -->
+        <div class="g-recaptcha" data-callback="captchasuccess" data-sitekey="6LeL5WAoAAAAAN4r1uj09cuuljKXOld5K5Egu01M"></div><br>
+
         </form>
     
 </body>
